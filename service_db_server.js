@@ -8,11 +8,11 @@ app.use( bodyParser.urlencoded( { extended: true } ) );
 app.use( bodyParser.json() );
 
 var user = {
-  first: 'Christopher',
-  last: 'Columbus',
+  first:    'Christopher',
+  last:     'Columbus',
   username: 'cc1492',             
-  title: 'Admiral',
-  home: 'Genoa'
+  title:    'Admiral',
+  home:     'Genoa'
 };
 
 var data = [];
@@ -51,6 +51,7 @@ function makeData() {
 }
 
 makeData();
+
 app.get( '/get/user', function( req, res ) {
   res.json( user );
 } );
