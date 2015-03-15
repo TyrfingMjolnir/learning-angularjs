@@ -27,8 +27,7 @@ app.post( '/buy/item', function( req, res ) {
     storeItems[ req.body.item ] = storeItems[ req.body.item ] - 1;
     res.json( storeItems );
   } else {
-    res.json( 400, { msg: 'Sorry ' + req.body.item + 
-                          ' is out of stock.' } );
+    res.json( 400, { msg: 'Sorry ' + req.body.item + ' is out of stock.' } );
   }
 } );
 
