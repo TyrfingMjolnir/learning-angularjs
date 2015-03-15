@@ -44,8 +44,8 @@ function makeData() {
   var t = 70;
   for( var x = 0; x < t; x++ ) {    
     var entry = {
-      day: d( x ),
-      time: r( 0, 23 ) + ':' + r( 0, 59 ),
+      day:       d( x ),
+      time:      r( 0, 23 ) + ':' + r( 0, 59 ),
       longitude: p( 37, 25, t, x ) + '\u00B0 '+ r( 0, 59 ) + ' N',
       latitude:  p(  6, 77, t, x ) + '\u00B0 '+ r( 0, 59 ) + ' W'
     };
