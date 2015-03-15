@@ -31,7 +31,7 @@ function p( start, end, total, current ) {
 }
 
 function d( plusDays ) {
-  var start = new Date( 1492, 7, 3 );
+  var start   = new Date( 1492, 7, 3 );
   var current = new Date( 1492, 7, 3 );
   current.setDate( start.getDate() + plusDays );
   return current.toDateString();
