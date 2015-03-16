@@ -4,6 +4,7 @@ angular.module( 'myApp', [] ).
     $scope.keyInfo      = {};
     $scope.keyStrokes   = [];
     $scope.keyState     = 'Not Pressed';
+
     $scope.keyPressed = function( event ) {
       if( event.keyCode == 13 ) {
         var element         = angular.element( event.target );
