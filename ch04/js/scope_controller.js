@@ -1,12 +1,12 @@
-angular.module('myApp', []).
-  value('start', 200).
-  controller('Counter', ['$scope', 'start', 
-                          function($scope, start) {
-    $scope.start = start;
-    $scope.current = start;
+angular.module( 'myApp', [] ).
+  value( 'start', 200 ).
+  controller( 'Counter', [ '$scope', 'start', 
+                           function( $scope, start ) {
+    $scope.start      = start;
+    $scope.current    = start;
     $scope.difference = 0;
-    $scope.change = 1;
-    $scope.inc = function() {
+    $scope.change     = 1;
+    $scope.inc        = function() {
       $scope.current += $scope.change;
       $scope.calcDiff();
     };
