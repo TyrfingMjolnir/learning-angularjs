@@ -1,5 +1,5 @@
 angular.module( 'myApp', [] ).
-  controller( 'myController', function( $scope ) {
+  controller(   'myController', function( $scope ) {
     $scope.colors  = [ 'red',
                        'green',
                        'blue' ];
