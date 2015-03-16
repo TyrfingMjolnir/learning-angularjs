@@ -13,14 +13,14 @@
       {{myArr}}<hr>
     Elements removed from array:<br>
       {{removedArr}}<hr> 
-    <a ng-click="myArr.push(Math.floor(Math.random()*100 + 1))">
+    <a ng-click="myArr.push( Math.floor( Math.random() * 100 + 1 ) )">
       Click to append a value to the array</a><hr> 
-    <a ng-click="removedArr.push(myArr.shift())">
+    <a ng-click="removedArr.push( myArr.shift() )">
       Click to remove the first value from the array</a><hr>
     Size of Array:<br>
-      {{myArr.length}}<hr>
+      {{ myArr.length }}<hr>
     Max number removed from the array:<br>
-      {{Math.max.apply(Math, removedArr)}}<hr>      
+      {{ Math.max.apply( Math, removedArr ) }}<hr>      
   <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
   <script src="js/expressions_javascript.js"></script>
 </body>
